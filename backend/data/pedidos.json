@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1775524284219,
+    "cliente": "Cliente Web",
+    "productos": [
+      1
+    ],
+    "estado": "pendiente"
+  },
+  {
+    "id": 1775524316070,
+    "cliente": "Cliente Web",
+    "productos": [
+      1
+    ],
+    "estado": "pendiente"
+  },
+  {
+    "id": 1775524568774,
+    "cliente": "Cliente Web",
+    "productos": [
+      1
+    ],
+    "estado": "pendiente"
+  }
+]
