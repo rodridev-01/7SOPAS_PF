@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "nombre": "7 Sopas Surquillo (Angamos)",
+    "direccion": "Av. Angamos Este 609, Surquillo",
+    "lat": -12.11327,
+    "lng": -77.02543,
+    "horario": "24 horas (Mantenimiento martes madrugada)"
+  },
+  {
+    "id": 2,
+    "nombre": "7 Sopas Lince",
+    "direccion": "Av. Arequipa 2394, Lince",
+    "lat": -12.08792,
+    "lng": -77.03427,
+    "horario": "09:00 - 00:00"
+  },
+  {
+    "id": 3,
+    "nombre": "7 Sopas Miraflores",
+    "direccion": "Av. Petit Thouars 5541, Miraflores",
+    "lat": -12.11895,
+    "lng": -77.02802,
+    "horario": "09:00 - 01:00"
+  },
+  {
+    "id": 4,
+    "nombre": "7 Sopas Plaza Norte",
+    "direccion": "C.C. Plaza Norte, Independencia",
+    "lat": -12.00741,
+    "lng": -77.05818,
+    "horario": "09:00 - 23:00"
+  },
+  {
+    "id": 5,
+    "nombre": "7 Sopas Surco",
+    "direccion": "Av. Surco 659, Santiago de Surco",
+    "lat": -12.14057,
+    "lng": -76.99496,
+    "horario": "09:00 - 01:00"
+  },
+  {
+    "id": 6,
+    "nombre": "7 Sopas Gamarra",
+    "direccion": "Jr. Huánuco 1670 (Parque Cánepa), La Victoria",
+    "lat": -12.06449,
+    "lng": -77.01493,
+    "horario": "11:00 - 21:00"
+  },
+  {
+    "id": 7,
+    "nombre": "7 Sopas Santa Anita",
+    "direccion": "Mall Aventura Santa Anita (Piso 3), Santa Anita",
+    "lat": -12.05637,
+    "lng": -76.97157,
+    "horario": "10:00 - 22:00"
+  },
+  {
+    "id": 8,
+    "nombre": "7 Sopas San Juan de Lurigancho",
+    "direccion": "Mall Aventura SJL, Av. Lurigancho 997",
+    "lat": -12.01618,
+    "lng": -76.99914,
+    "horario": "10:00 - 23:00"
+  }
+]
