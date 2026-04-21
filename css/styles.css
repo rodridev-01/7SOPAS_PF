@@ -7,9 +7,23 @@
   --border-radius: 15px;
 }
 
+html,
 body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   color: var(--text-dark);
+}
+
+main {
+  flex: 1;
+  padding-top: var(--nav-height);
 }
 
 .loader-overlay {
@@ -130,11 +144,6 @@ body {
 .input-group .form-control:focus {
   box-shadow: none;
   border-color: #dee2e6;
-}
-
-/* HERO CARRUSEL */
-.hero-carousel {
-  margin-top: var(--nav-height);
 }
 
 .carousel-img {
@@ -302,6 +311,35 @@ body {
 
 .footer-link:hover {
   color: var(--primary-color);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: #dbdbdb;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: var(--transition);
+}
+
+.login-card .form-control {
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.login-card .btn {
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.login-card a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 991px) {

@@ -3,64 +3,137 @@
     "id": 1,
     "nombre": "7 Sopas Surquillo (Angamos)",
     "direccion": "Av. Angamos Este 609, Surquillo",
+    "distrito": "Surquillo",
     "lat": -12.11327,
     "lng": -77.02543,
-    "horario": "24 horas (Mantenimiento martes madrugada)"
+    "horario": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "nota": "24 horas (Mantenimiento martes madrugada)"
+    },
+    "telefono": "987654321",
+    "capacidad": 80,
+    "mesasDisponibles": 25,
+    "estado": "abierto",
+    "servicios": ["reserva", "takeaway"]
   },
   {
     "id": 2,
     "nombre": "7 Sopas Lince",
     "direccion": "Av. Arequipa 2394, Lince",
+    "distrito": "Lince",
     "lat": -12.08792,
     "lng": -77.03427,
-    "horario": "09:00 - 00:00"
+    "horario": {
+      "apertura": "09:00",
+      "cierre": "00:00"
+    },
+    "telefono": "912345678",
+    "capacidad": 60,
+    "mesasDisponibles": 18,
+    "estado": "abierto",
+    "servicios": ["reserva", "takeaway"]
   },
   {
     "id": 3,
     "nombre": "7 Sopas Miraflores",
     "direccion": "Av. Petit Thouars 5541, Miraflores",
+    "distrito": "Miraflores",
     "lat": -12.11895,
     "lng": -77.02802,
-    "horario": "09:00 - 01:00"
+    "horario": {
+      "apertura": "09:00",
+      "cierre": "01:00"
+    },
+    "telefono": "923456789",
+    "capacidad": 70,
+    "mesasDisponibles": 20,
+    "estado": "abierto",
+    "servicios": ["reserva", "takeaway"]
   },
   {
     "id": 4,
     "nombre": "7 Sopas Plaza Norte",
     "direccion": "C.C. Plaza Norte, Independencia",
+    "distrito": "Independencia",
     "lat": -12.00741,
     "lng": -77.05818,
-    "horario": "09:00 - 23:00"
+    "horario": {
+      "apertura": "09:00",
+      "cierre": "23:00"
+    },
+    "telefono": "934567890",
+    "capacidad": 90,
+    "mesasDisponibles": 30,
+    "estado": "abierto",
+    "servicios": ["reserva", "takeaway"]
   },
   {
     "id": 5,
     "nombre": "7 Sopas Surco",
     "direccion": "Av. Surco 659, Santiago de Surco",
+    "distrito": "Surco",
     "lat": -12.14057,
     "lng": -76.99496,
-    "horario": "09:00 - 01:00"
+    "horario": {
+      "apertura": "09:00",
+      "cierre": "01:00"
+    },
+    "telefono": "945678901",
+    "capacidad": 75,
+    "mesasDisponibles": 22,
+    "estado": "abierto",
+    "servicios": ["reserva", "takeaway"]
   },
   {
     "id": 6,
     "nombre": "7 Sopas Gamarra",
     "direccion": "Jr. Huánuco 1670 (Parque Cánepa), La Victoria",
+    "distrito": "La Victoria",
     "lat": -12.06449,
     "lng": -77.01493,
-    "horario": "11:00 - 21:00"
+    "horario": {
+      "apertura": "11:00",
+      "cierre": "21:00"
+    },
+    "telefono": "956789012",
+    "capacidad": 50,
+    "mesasDisponibles": 15,
+    "estado": "abierto",
+    "servicios": ["reserva", "takeaway"]
   },
   {
     "id": 7,
     "nombre": "7 Sopas Santa Anita",
     "direccion": "Mall Aventura Santa Anita (Piso 3), Santa Anita",
+    "distrito": "Santa Anita",
     "lat": -12.05637,
     "lng": -76.97157,
-    "horario": "10:00 - 22:00"
+    "horario": {
+      "apertura": "10:00",
+      "cierre": "22:00"
+    },
+    "telefono": "967890123",
+    "capacidad": 65,
+    "mesasDisponibles": 19,
+    "estado": "abierto",
+    "servicios": ["reserva", "takeaway"]
   },
   {
     "id": 8,
     "nombre": "7 Sopas San Juan de Lurigancho",
     "direccion": "Mall Aventura SJL, Av. Lurigancho 997",
+    "distrito": "San Juan de Lurigancho",
     "lat": -12.01618,
     "lng": -76.99914,
-    "horario": "10:00 - 23:00"
+    "horario": {
+      "apertura": "10:00",
+      "cierre": "23:00"
+    },
+    "telefono": "978901234",
+    "capacidad": 85,
+    "mesasDisponibles": 28,
+    "estado": "abierto",
+    "servicios": ["reserva", "takeaway"]
   }
 ]

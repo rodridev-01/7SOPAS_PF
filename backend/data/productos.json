@@ -1,5 +1,82 @@
 [
-  { "id": 1, "nombre": "Sopa de Gallina", "precio": 18 },
-  { "id": 2, "nombre": "Caldo de Mote", "precio": 15 },
-  { "id": 3, "nombre": "Menestrón", "precio": 16 }
+  {
+    "id": 1,
+    "nombre": "Sopa de Gallina",
+    "precios": { "personal": 15, "mediano": 18, "grande": 22 },
+    "categoria": "sopas",
+    "imagen": "../img/sopas/1.jpg",
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "nombre": "Caldo de Mote",
+    "precios": { "personal": 14, "mediano": 17, "grande": 20 },
+    "categoria": "sopas",
+    "imagen": "../img/sopas/1.jpg",
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "nombre": "Menestrón",
+    "precios": { "personal": 15, "mediano": 18, "grande": 21 },
+    "categoria": "sopas",
+    "imagen": "../img/sopas/1.jpg",
+    "disponible": true
+  },
+  {
+    "id": 4,
+    "nombre": "Caldo de Cabeza",
+    "precios": { "personal": 16, "mediano": 19, "grande": 23 },
+    "categoria": "sopas",
+    "imagen": "../img/sopas/1.jpg",
+    "disponible": true
+  },
+  {
+    "id": 5,
+    "nombre": "Caldo de Patasca",
+    "precios": { "personal": 16, "mediano": 19, "grande": 23 },
+    "categoria": "sopas",
+    "imagen": "../img/sopas/1.jpg",
+    "disponible": true
+  },
+  {
+    "id": 6,
+    "nombre": "Sopa Criolla",
+    "precios": { "personal": 14, "mediano": 17, "grande": 20 },
+    "categoria": "sopas",
+    "imagen": "../img/sopas/1.jpg",
+    "disponible": true
+  },
+  {
+    "id": 7,
+    "nombre": "Chupe de Pollo",
+    "precios": { "personal": 15, "mediano": 18, "grande": 22 },
+    "categoria": "sopas",
+    "imagen": "../img/sopas/1.jpg",
+    "disponible": true
+  },
+  {
+    "id": 8,
+    "nombre": "Chupe de Camarones",
+    "precios": { "personal": 20, "mediano": 25, "grande": 30 },
+    "categoria": "sopas",
+    "imagen": "../img/sopas/1.jpg",
+    "disponible": true
+  },
+  {
+    "id": 9,
+    "nombre": "Sopa a la Minuta",
+    "precios": { "personal": 14, "mediano": 17, "grande": 20 },
+    "categoria": "sopas",
+    "imagen": "../img/sopas/1.jpg",
+    "disponible": true
+  },
+  {
+    "id": 10,
+    "nombre": "Caldo de Res",
+    "precios": { "personal": 16, "mediano": 19, "grande": 23 },
+    "categoria": "sopas",
+    "imagen": "../img/sopas/1.jpg",
+    "disponible": true
+  }
 ]

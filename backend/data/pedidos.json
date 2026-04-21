@@ -1,26 +1,12 @@
 [
   {
-    "id": 1775524284219,
-    "cliente": "Cliente Web",
+    "id": 1,
+    "usuarioId": 1,
+    "sedeId": 2,
     "productos": [
-      1
+      { "productoId": 1, "tamaño": "grande", "cantidad": 2 }
     ],
-    "estado": "pendiente"
-  },
-  {
-    "id": 1775524316070,
-    "cliente": "Cliente Web",
-    "productos": [
-      1
-    ],
-    "estado": "pendiente"
-  },
-  {
-    "id": 1775524568774,
-    "cliente": "Cliente Web",
-    "productos": [
-      1
-    ],
-    "estado": "pendiente"
+    "estado": "pendiente",
+    "fecha": "2026-04-20"
   }
 ]
