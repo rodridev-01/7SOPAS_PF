@@ -318,11 +318,7 @@ main {
   max-width: 400px;
   background: #dbdbdb;
   border-radius: var(--border-radius);
-<<<<<<< HEAD
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-=======
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
->>>>>>> d87a76d1aa712c9c9a51493f5ae1af880833858d
   transition: var(--transition);
 }
 
@@ -382,7 +378,6 @@ main {
     padding: 10px 0;
   }
 
-<<<<<<< HEAD
   .navbar-nav {
     gap: 10px;
   }
@@ -390,14 +385,6 @@ main {
   .nav-link:hover,
   .nav-link.active {
     border-bottom: 2px solid transparent;
-=======
-  .hero-carousel {
-    margin-top: 70px;
-  }
-
-  .navbar-nav {
-    gap: 10px;
->>>>>>> d87a76d1aa712c9c9a51493f5ae1af880833858d
   }
 
   .cta-box {
