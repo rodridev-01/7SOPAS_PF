@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "nombre": "Rodrigo",
+    "email": "rodrigo@gmail.com",
+    "password": "123",
+    "restricciones": [
+      "sin gluten"
+    ],
+    "historial": [
+      1,
+      2
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "usuarioId": 1,
+    "sedeId": 2,
+    "productos": [
+      { "productoId": 1, "tamaño": "grande", "cantidad": 2 }
+    ],
+    "estado": "pendiente",
+    "fecha": "2026-04-20"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "usuarioId": 1,
+    "sedeId": 3,
+    "fecha": "2026-04-25",
+    "hora": "20:00",
+    "personas": 4,
+    "estado": "confirmada"
+  }
+]
