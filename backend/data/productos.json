@@ -12,7 +12,11 @@
     "nombre": "Caldo de Mote",
     "precios": { "personal": 14, "mediano": 17, "grande": 20 },
     "categoria": "sopas",
+<<<<<<< HEAD
     "imagen": "../img/sopas/2.jpg",
+=======
+    "imagen": "../img/sopas/1.jpg",
+>>>>>>> d87a76d1aa712c9c9a51493f5ae1af880833858d
     "disponible": true
   },
   {

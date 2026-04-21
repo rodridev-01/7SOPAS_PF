@@ -15,7 +15,11 @@ class Navbar extends HTMLElement {
                 <ul class="navbar-nav mx-auto text-center">
                 <li class="nav-item"><a class="nav-link active" href="index.html">INICIO</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">SOPA DEL DIA</a></li>
+<<<<<<< HEAD
                 <li class="nav-item"><a class="nav-link" href="menu.html">NUESTRA CARTA</a></li>
+=======
+                <li class="nav-item"><a class="nav-link" href="#">NUESTRA CARTA</a></li>
+>>>>>>> d87a76d1aa712c9c9a51493f5ae1af880833858d
                 <li class="nav-item"><a class="nav-link" href="#">RESERVA</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">ACERCA DE</a></li>
                 </ul>
