@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "7 Sopas Surquillo (Angamos)",
-    "imagen": "/img/sedes/s1.png",
+    "imagen": "../img/sedes/s1.png",
     "direccion": "Av. Angamos Este 609, Surquillo",
     "distrito": "Surquillo",
     "lat": -12.11327,
@@ -21,6 +21,7 @@
   {
     "id": 2,
     "nombre": "7 Sopas Lince",
+    "imagen": "../img/sedes/s1.png",
     "direccion": "Av. Arequipa 2394, Lince",
     "distrito": "Lince",
     "lat": -12.08792,
@@ -38,6 +39,7 @@
   {
     "id": 3,
     "nombre": "7 Sopas Miraflores",
+    "imagen": "../img/sedes/s1.png",
     "direccion": "Av. Petit Thouars 5541, Miraflores",
     "distrito": "Miraflores",
     "lat": -12.11895,
@@ -57,6 +59,7 @@
     "nombre": "7 Sopas Plaza Norte",
     "direccion": "C.C. Plaza Norte, Independencia",
     "distrito": "Independencia",
+    "imagen": "../img/sedes/s1.png",
     "lat": -12.00741,
     "lng": -77.05818,
     "horario": {
@@ -72,8 +75,9 @@
   {
     "id": 5,
     "nombre": "7 Sopas Surco",
+    "imagen": "../img/sedes/s1.png",
     "direccion": "Av. Surco 659, Santiago de Surco",
-    "distrito": "Surco",
+    "distrito": "Surco",  
     "lat": -12.14057,
     "lng": -76.99496,
     "horario": {
@@ -89,6 +93,7 @@
   {
     "id": 6,
     "nombre": "7 Sopas Gamarra",
+    "imagen": "../img/sedes/s1.png",
     "direccion": "Jr. Huánuco 1670 (Parque Cánepa), La Victoria",
     "distrito": "La Victoria",
     "lat": -12.06449,
@@ -106,6 +111,7 @@
   {
     "id": 7,
     "nombre": "7 Sopas Santa Anita",
+    "imagen": "../img/sedes/s1.png",
     "direccion": "Mall Aventura Santa Anita (Piso 3), Santa Anita",
     "distrito": "Santa Anita",
     "lat": -12.05637,
@@ -123,6 +129,7 @@
   {
     "id": 8,
     "nombre": "7 Sopas San Juan de Lurigancho",
+    "imagen": "../img/sedes/s1.png",
     "direccion": "Mall Aventura SJL, Av. Lurigancho 997",
     "distrito": "San Juan de Lurigancho",
     "lat": -12.01618,

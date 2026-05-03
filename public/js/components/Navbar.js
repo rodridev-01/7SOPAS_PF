@@ -16,7 +16,7 @@ class Navbar extends HTMLElement {
                 <li class="nav-item"><a class="nav-link active" href="/">INICIO</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">SOPA DEL DIA</a></li>
                 <li class="nav-item"><a class="nav-link" href="menu">NUESTRA CARTA</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">RESERVA</a></li>
+                <li class="nav-item"><a class="nav-link" href="sedes">RESERVA</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">ACERCA DE</a></li>
                 </ul>
 
