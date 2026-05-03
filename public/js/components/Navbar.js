@@ -13,9 +13,9 @@ class Navbar extends HTMLElement {
 
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav mx-auto text-center">
-                <li class="nav-item"><a class="nav-link active" href="index.html">INICIO</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/">INICIO</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">SOPA DEL DIA</a></li>
-                <li class="nav-item"><a class="nav-link" href="menu.html">NUESTRA CARTA</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu">NUESTRA CARTA</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">RESERVA</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">ACERCA DE</a></li>
                 </ul>

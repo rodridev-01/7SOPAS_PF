@@ -17,8 +17,8 @@ class Footer extends HTMLElement {
                 <div class="col-md-4 mb-4">
                     <h6 class="fw-bold mb-3">Enlaces</h6>
                     <ul class="list-unstyled">
-                    <li class="mb-2"><a href="menu.html" class="text-secondary text-decoration-none footer-link">Menú</a></li>
-                    <li class="mb-2"><a href="cart.html" class="text-secondary text-decoration-none footer-link">Carrito</a></li>
+                    <li class="mb-2"><a href="menu" class="text-secondary text-decoration-none footer-link">Menú</a></li>
+                    <li class="mb-2"><a href="cart" class="text-secondary text-decoration-none footer-link">Carrito</a></li>
                     </ul>
                 </div>
 

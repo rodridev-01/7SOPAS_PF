@@ -14,7 +14,7 @@ function login(email, password) {
       }
 
       localStorage.setItem("usuario", JSON.stringify(data.usuario));
-      window.location.href = "index.html";
+      window.location.href = "/";
     })
     .catch(() => {
       alert("Error de conexión");

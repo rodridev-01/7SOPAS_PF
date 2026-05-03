@@ -17,7 +17,7 @@ function registrar(nombre, email, password) {
 
       alert("Usuario registrado correctamente");
 
-      window.location.href = "index.html";
+      window.location.href = "/";
     })
     .catch(() => {
       alert("Error al registrar");

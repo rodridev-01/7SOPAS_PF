@@ -11,5 +11,21 @@
       1,
       2
     ]
+  },
+  {
+    "id": 2,
+    "nombre": "Britanny",
+    "email": "qeqweq",
+    "password": "eqqeqeew",
+    "restricciones": [],
+    "historial": []
+  },
+  {
+    "id": 3,
+    "nombre": "Britanny",
+    "email": "britanny@gmail.com",
+    "password": "1234567",
+    "restricciones": [],
+    "historial": []
   }
 ]
