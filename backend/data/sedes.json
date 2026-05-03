@@ -2,6 +2,7 @@
   {
     "id": 1,
     "nombre": "7 Sopas Surquillo (Angamos)",
+    "imagen": "/img/sedes/s1.png",
     "direccion": "Av. Angamos Este 609, Surquillo",
     "distrito": "Surquillo",
     "lat": -12.11327,
