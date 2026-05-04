@@ -3,7 +3,7 @@ class Navbar extends HTMLElement {
         this.innerHTML = `
         <nav class="navbar navbar-expand-lg fixed-top custom-navbar bg-white">
             <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="../img/logo.png" class="logo" alt="7 Sopas Logo">
             </a>
 
@@ -13,7 +13,7 @@ class Navbar extends HTMLElement {
 
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav mx-auto text-center">
-                <li class="nav-item"><a class="nav-link active" href="/">INICIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="/">INICIO</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">SOPA DEL DIA</a></li>
                 <li class="nav-item"><a class="nav-link" href="menu">NUESTRA CARTA</a></li>
                 <li class="nav-item"><a class="nav-link" href="sedes">RESERVA</a></li>
@@ -37,13 +37,17 @@ class Navbar extends HTMLElement {
             </div>
         </nav>`;
 
+        const currentPath = window.location.pathname;
         const links = this.querySelectorAll('.nav-link');
 
         links.forEach(link => {
-            link.addEventListener('click', function () {
-                links.forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-            });
+            const href = link.getAttribute('href');
+            if (!href || href === '#') {
+                link.classList.remove('active');
+                return;
+            }
+            const linkPath = new URL(link.href).pathname;
+            link.classList.toggle('active', linkPath === currentPath);
         });
     }
 }

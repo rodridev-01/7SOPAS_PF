@@ -15,7 +15,7 @@ app.use("/api/productos", require("./routes/productos"));
 app.use("/api/sedes", require("./routes/sedes"));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/index.html"));
+  res.sendFile(path.join(__dirname, "../index.html"));
 });
 
 app.get("/:page", (req, res, next) => {
