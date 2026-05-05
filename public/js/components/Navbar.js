@@ -13,31 +13,34 @@ class Navbar extends HTMLElement {
 
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav mx-auto text-center">
-                <li class="nav-item"><a class="nav-link" href="/">INICIO</a></li>
-                <li class="nav-item"><a class="nav-link" href="menu">NUESTRA CARTA</a></li>
-                <li class="nav-item"><a class="nav-link" href="reservas">RESERVA</a></li>
-                <li class="nav-item"><a class="nav-link" href="sedes">SEDES</a></li>
-                <li class="nav-item"><a class="nav-link" href="about">ACERCA DE</a></li>
-                <li class="nav-item">
-                    <a class="nav-link position-relative" href="cart">
-                        <i class="bi bi-cart3"></i> CARRITO
-                        <span id="cartCount" class="cart-count-badge">0</span>
-                    </a>
-                </li>
+                    <li class="nav-item"><a class="nav-link" href="/">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu">NUESTRA CARTA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservas">RESERVA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sedes">SEDES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about">ACERCA DE</a></li>
                 </ul>
 
-                <div class="d-flex flex-column flex-lg-row align-items-center gap-3 d-none d-lg-flex">
-                <div class="d-flex gap-3 social-links">
-                    <a href="https://es-es.facebook.com/SieteSopas/" target="_blank" class="nav-icon"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/sietesopas/?hl=es-la" target="_blank" class="nav-icon"><i class="bi bi-instagram"></i></a>
-                    <a href="https://wa.me/51998310683?" target="_blank" class="nav-icon"><i class="bi bi-whatsapp"></i></a>
-                </div>
-                
-                <a href="login" class="btn btn-sm btn-outline-danger" id="loginLink">Login</a>
-                <div class="user-session d-none" id="userSession">
-                    <span class="small fw-bold" id="userGreeting"></span>
-                    <button class="btn btn-sm btn-outline-secondary" id="logoutBtn">Salir</button>
-                </div>
+                <div class="d-flex flex-column flex-lg-row align-items-center gap-3 ms-lg-auto">
+
+                    <!-- 🛒 CARRITO DESTACADO -->
+                    <a href="cart" class="btn btn-danger position-relative fw-bold px-3">
+                        <i class="bi bi-cart3"></i>
+                        <span id="cartCount" class="cart-badge">0</span>
+                    </a>
+
+                    <div class="d-flex gap-3 social-links">
+                        <a href="https://es-es.facebook.com/SieteSopas/" target="_blank" class="nav-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/sietesopas/?hl=es-la" target="_blank" class="nav-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/51998310683?" target="_blank" class="nav-icon"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+
+                    <a href="login" class="btn btn-sm btn-outline-danger" id="loginLink">Login</a>
+
+                    <div class="user-session d-none" id="userSession">
+                        <span class="small fw-bold" id="userGreeting"></span>
+                        <button class="btn btn-sm btn-outline-secondary" id="logoutBtn">Salir</button>
+                    </div>
+
                 </div>
             </div>
             </div>

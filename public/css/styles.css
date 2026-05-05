@@ -89,6 +89,56 @@ main {
   }
 }
 
+.cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #fff;
+    color: #dc3545;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 4px 7px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.btn-danger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 20px;
+}
+
+.image-wrapper {
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    transition: transform 0.4s ease;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.08);
+}
+
+.value-card {
+    background: white;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.value-card i {
+    font-size: 2rem;
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
 .tracking-wider {
   letter-spacing: 2px;
 }

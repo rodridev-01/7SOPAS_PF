@@ -38,7 +38,8 @@
     "subtotal": 15,
     "delivery": 6,
     "total": 21,
-    "estado": "pendiente",
-    "fecha": "2026-05-05T02:58:01.823Z"
+    "estado": "cancelado",
+    "fecha": "2026-05-05T02:58:01.823Z",
+    "actualizadoEn": "2026-05-05T04:09:06.366Z"
   }
 ]
