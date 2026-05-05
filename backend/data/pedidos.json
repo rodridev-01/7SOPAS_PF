@@ -4,9 +4,41 @@
     "usuarioId": 1,
     "sedeId": 2,
     "productos": [
-      { "productoId": 1, "tamaño": "grande", "cantidad": 2 }
+      {
+        "productoId": 1,
+        "tamaño": "grande",
+        "cantidad": 2
+      }
     ],
+    "estado": "entregado",
+    "fecha": "2026-04-20",
+    "actualizadoEn": "2026-05-05T02:55:48.000Z"
+  },
+  {
+    "id": 2,
+    "usuarioId": null,
+    "cliente": {
+      "nombre": "Leonardo",
+      "telefono": "900000000",
+      "email": "ejemplo2@gmail.com"
+    },
+    "sedeId": 8,
+    "tipoEntrega": "delivery",
+    "direccion": "Av. Santa Rosa Cdra. 14 Urb. San Jorge Mz. C Lte. 3",
+    "productos": [
+      {
+        "productoId": 1,
+        "nombre": "Sopa de Gallina",
+        "tamaño": "personal",
+        "cantidad": 1,
+        "precioUnitario": 15,
+        "subtotal": 15
+      }
+    ],
+    "subtotal": 15,
+    "delivery": 6,
+    "total": 21,
     "estado": "pendiente",
-    "fecha": "2026-04-20"
+    "fecha": "2026-05-05T02:58:01.823Z"
   }
 ]

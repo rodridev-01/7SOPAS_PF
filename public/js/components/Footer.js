@@ -8,9 +8,9 @@ class Footer extends HTMLElement {
                     <h5 class="fw-bold mb-3">7 Sopas</h5>
                     <p class="text-secondary">Tradición peruana en cada plato.</p>
                     <div class="d-flex gap-2 mt-4">
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://es-es.facebook.com/SieteSopas/" target="_blank" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/sietesopas/?hl=es-la" target="_blank" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
+                    <a href="https://wa.me/51998310683" target="_blank" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
 
@@ -19,6 +19,8 @@ class Footer extends HTMLElement {
                     <ul class="list-unstyled">
                     <li class="mb-2"><a href="menu" class="text-secondary text-decoration-none footer-link">Menú</a></li>
                     <li class="mb-2"><a href="cart" class="text-secondary text-decoration-none footer-link">Carrito</a></li>
+                    <li class="mb-2"><a href="reservas" class="text-secondary text-decoration-none footer-link">Reservas</a></li>
+                    <li class="mb-2"><a href="sedes" class="text-secondary text-decoration-none footer-link">Sedes</a></li>
                     </ul>
                 </div>
 

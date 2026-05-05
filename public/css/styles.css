@@ -414,3 +414,120 @@ main {
     grid-row: span 1;
   }
 }
+
+/* PRODUCTOS Y CARRITO */
+.product-card {
+  border: 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.product-card .card-img-top {
+  height: 230px;
+  object-fit: cover;
+}
+
+.cart-count-badge {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.cart-section {
+  background: #f8f9fa;
+  min-height: calc(100vh - var(--nav-height));
+}
+
+.cart-panel {
+  border: 0;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.cart-summary {
+  top: 100px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+  border-bottom: 0;
+}
+
+.cart-item-img {
+  width: 110px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cart-qty {
+  min-width: 28px;
+  text-align: center;
+}
+
+.cart-item-price {
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .cart-item {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .cart-item-img {
+    width: 80px;
+    height: 70px;
+  }
+
+  .cart-item-price {
+    grid-column: 2;
+  }
+}
+
+/* Mejoras nuevas: reservas, sesión y admin */
+.user-session {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reservation-section {
+  padding-top: 110px;
+  min-height: 80vh;
+}
+
+.admin-stat-card {
+  border-radius: 18px;
+}
+
+.admin-stat-card h3 {
+  font-weight: 800;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}

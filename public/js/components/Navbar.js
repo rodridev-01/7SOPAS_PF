@@ -14,10 +14,16 @@ class Navbar extends HTMLElement {
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav mx-auto text-center">
                 <li class="nav-item"><a class="nav-link" href="/">INICIO</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">SOPA DEL DIA</a></li>
                 <li class="nav-item"><a class="nav-link" href="menu">NUESTRA CARTA</a></li>
-                <li class="nav-item"><a class="nav-link" href="sedes">RESERVA</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">ACERCA DE</a></li>
+                <li class="nav-item"><a class="nav-link" href="reservas">RESERVA</a></li>
+                <li class="nav-item"><a class="nav-link" href="sedes">SEDES</a></li>
+                <li class="nav-item"><a class="nav-link" href="about">ACERCA DE</a></li>
+                <li class="nav-item">
+                    <a class="nav-link position-relative" href="cart">
+                        <i class="bi bi-cart3"></i> CARRITO
+                        <span id="cartCount" class="cart-count-badge">0</span>
+                    </a>
+                </li>
                 </ul>
 
                 <div class="d-flex flex-column flex-lg-row align-items-center gap-3 d-none d-lg-flex">
@@ -26,11 +32,11 @@ class Navbar extends HTMLElement {
                     <a href="https://www.instagram.com/sietesopas/?hl=es-la" target="_blank" class="nav-icon"><i class="bi bi-instagram"></i></a>
                     <a href="https://wa.me/51998310683?" target="_blank" class="nav-icon"><i class="bi bi-whatsapp"></i></a>
                 </div>
-                <div class="input-group search-group">
-                    <span class="input-group-text bg-transparent border-end-0">
-                        <i class="bi bi-search"></i>
-                    </span>
-                    <input type="text" class="form-control border-start-0" placeholder="Encuentra local">
+                
+                <a href="login" class="btn btn-sm btn-outline-danger" id="loginLink">Login</a>
+                <div class="user-session d-none" id="userSession">
+                    <span class="small fw-bold" id="userGreeting"></span>
+                    <button class="btn btn-sm btn-outline-secondary" id="logoutBtn">Salir</button>
                 </div>
                 </div>
             </div>
@@ -49,6 +55,43 @@ class Navbar extends HTMLElement {
             const linkPath = new URL(link.href).pathname;
             link.classList.toggle('active', linkPath === currentPath);
         });
+
+        this.actualizarContadorCarrito();
+        this.actualizarSesionUsuario();
+        window.addEventListener("carritoActualizado", () => this.actualizarContadorCarrito());
+        window.addEventListener("storage", () => this.actualizarContadorCarrito());
+    }
+
+    actualizarSesionUsuario() {
+        const usuario = JSON.parse(localStorage.getItem("usuario"));
+        const loginLink = this.querySelector("#loginLink");
+        const userSession = this.querySelector("#userSession");
+        const userGreeting = this.querySelector("#userGreeting");
+        const logoutBtn = this.querySelector("#logoutBtn");
+
+        if (usuario) {
+            loginLink?.classList.add("d-none");
+            userSession?.classList.remove("d-none");
+            if (userGreeting) userGreeting.textContent = `Hola, ${usuario.nombre}`;
+            logoutBtn?.addEventListener("click", () => {
+                localStorage.removeItem("usuario");
+                window.location.href = "/";
+            });
+        } else {
+            loginLink?.classList.remove("d-none");
+            userSession?.classList.add("d-none");
+        }
+    }
+
+    actualizarContadorCarrito() {
+        const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+        const totalItems = carrito.reduce((total, item) => total + Number(item.cantidad || 0), 0);
+        const badge = this.querySelector("#cartCount");
+
+        if (!badge) return;
+
+        badge.textContent = totalItems;
+        badge.classList.toggle("d-none", totalItems === 0);
     }
 }
 

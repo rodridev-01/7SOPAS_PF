@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Admin | 7 Sopas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="/admin/dashboard.html">7 Sopas Admin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="adminNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><span class="nav-link" id="adminNombre">Administrador</span></li>
+          <li class="nav-item"><a class="nav-link" href="/">Ver web</a></li>
+          <li class="nav-item"><button class="btn btn-outline-light btn-sm me-2" id="btnRecargar">Actualizar datos</button></li>
+          <li class="nav-item"><button class="btn btn-light btn-sm text-danger fw-semibold" id="btnCerrarAdmin">Cerrar sesión</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid py-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between gap-2 align-items-md-center mb-4">
+      <div>
+        <h1 class="h3 fw-bold mb-1">Panel administrativo</h1>
+        <p class="text-muted mb-0">Datos conectados al backend: productos, sedes, pedidos, reservas y usuarios.</p>
+      </div>
+      <span class="badge text-bg-secondary" id="ultimaActualizacion">Sin actualizar</span>
+    </div>
+
+    <div id="mensajeAdmin"></div>
+
+    <section class="row g-3 mb-4">
+      <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm admin-stat-card">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div><p class="text-muted mb-1">Productos</p><h3 id="statProductos" class="mb-0">0</h3></div>
+            <i class="bi bi-cup-hot fs-1 text-danger"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm admin-stat-card">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div><p class="text-muted mb-1">Sedes</p><h3 id="statSedes" class="mb-0">0</h3></div>
+            <i class="bi bi-geo-alt fs-1 text-danger"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm admin-stat-card">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div><p class="text-muted mb-1">Pedidos</p><h3 id="statPedidos" class="mb-0">0</h3></div>
+            <i class="bi bi-receipt fs-1 text-danger"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm admin-stat-card">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div><p class="text-muted mb-1">Reservas</p><h3 id="statReservas" class="mb-0">0</h3></div>
+            <i class="bi bi-calendar-check fs-1 text-danger"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row g-4">
+      <div class="col-xl-7">
+        <div class="card border-0 shadow-sm">
+          <div class="card-header bg-white d-flex justify-content-between align-items-center">
+            <h2 class="h5 mb-0">Pedidos registrados</h2>
+            <span class="badge text-bg-danger" id="badgePedidosPendientes">0 pendientes</span>
+          </div>
+          <div class="card-body table-responsive">
+            <table class="table table-hover align-middle">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Cliente</th>
+                  <th>Total</th>
+                  <th>Estado</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody id="tablaPedidos"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-5">
+        <div class="card border-0 shadow-sm">
+          <div class="card-header bg-white d-flex justify-content-between align-items-center">
+            <h2 class="h5 mb-0">Reservas registradas</h2>
+            <span class="badge text-bg-primary" id="badgeReservasConfirmadas">0 confirmadas</span>
+          </div>
+          <div class="card-body table-responsive">
+            <table class="table table-hover align-middle">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Cliente</th>
+                  <th>Fecha</th>
+                  <th>Estado</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody id="tablaReservas"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6">
+        <div class="card border-0 shadow-sm">
+          <div class="card-header bg-white"><h2 class="h5 mb-0">Productos disponibles</h2></div>
+          <div class="card-body table-responsive">
+            <table class="table table-sm align-middle">
+              <thead><tr><th>Producto</th><th>Categoría</th><th>Desde</th><th>Estado</th></tr></thead>
+              <tbody id="tablaProductos"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6">
+        <div class="card border-0 shadow-sm">
+          <div class="card-header bg-white"><h2 class="h5 mb-0">Sedes</h2></div>
+          <div class="card-body table-responsive">
+            <table class="table table-sm align-middle">
+              <thead><tr><th>Sede</th><th>Distrito</th><th>Mesas</th><th>Estado</th></tr></thead>
+              <tbody id="tablaSedes"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/admin/js/admin-auth.js"></script>
+  <script src="/admin/js/admin-dashboard.js"></script>
+</body>
+
+</html>

@@ -3,14 +3,16 @@
     "id": 1,
     "nombre": "Rodrigo",
     "email": "rodrigo@gmail.com",
-    "password": "123",
     "restricciones": [
       "sin gluten"
     ],
     "historial": [
       1,
       2
-    ]
+    ],
+    "rol": "cliente",
+    "passwordSalt": "97492d92a773557aaa83d249886ff5d7",
+    "passwordHash": "4b5a42d5ea1ddd9f160cb39e8edfb5c4b3f3110f415085544cbc51afee97e2cc7b4acf089c74343bc1da0b6bd72d3bdbbb6da2f002d6bc85be49956db40abd18"
   },
   {
     "id": 2,
@@ -18,13 +20,24 @@
     "email": "qeqweq",
     "password": "eqqeqeew",
     "restricciones": [],
-    "historial": []
+    "historial": [],
+    "rol": "cliente"
   },
   {
     "id": 3,
     "nombre": "Britanny",
     "email": "britanny@gmail.com",
     "password": "1234567",
+    "restricciones": [],
+    "historial": [],
+    "rol": "cliente"
+  },
+  {
+    "id": 4,
+    "nombre": "Administrador 7 Sopas",
+    "email": "admin@7sopas.com",
+    "password": "admin123",
+    "rol": "admin",
     "restricciones": [],
     "historial": []
   }

@@ -1,34 +1,39 @@
+function mostrarErrorLogin(texto) {
+  alert(texto);
+}
+
 function login(email, password) {
   fetch(API + "/usuarios/login", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email, password })
   })
-    .then(res => res.json())
-    .then(data => {
-      if (data.mensaje !== "Login exitoso") {
-        alert("Usuario o contraseña incorrectas");
-        return;
-      }
-
+    .then(async (res) => {
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.mensaje || "Usuario o contraseña incorrectas");
       localStorage.setItem("usuario", JSON.stringify(data.usuario));
       window.location.href = "/";
     })
-    .catch(() => {
-      alert("Error de conexión");
-    });
+    .catch((error) => mostrarErrorLogin(error.message));
 }
 
 document.getElementById("btnLogin").addEventListener("click", handleLogin);
 
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") handleLogin();
+});
+
 function handleLogin() {
-  const email = document.getElementById("email").value;
+  const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
 
   if (!email || !password) {
-    alert("Completa todos los campos");
+    mostrarErrorLogin("Completa todos los campos");
+    return;
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    mostrarErrorLogin("Ingresa un correo válido");
     return;
   }
 

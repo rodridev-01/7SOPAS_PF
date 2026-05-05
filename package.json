@@ -1,0 +1,12 @@
+{
+  "name": "7sopas-pf",
+  "version": "1.0.0",
+  "description": "Sistema web de 7 Sopas con Node.js, Express, carrito, pedidos, reservas y panel administrador.",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["node", "express", "carrito", "reservas", "pedidos"],
+  "author": "Proyecto académico",
+  "license": "ISC"
+}
