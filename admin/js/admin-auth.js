@@ -13,14 +13,14 @@ function guardarSesionAdmin(sesion) {
 
 function cerrarSesionAdmin() {
   localStorage.removeItem("adminSesion7Sopas");
-  window.location.href = "/admin/login.html";
+  window.location.href = "/admin/login";
 }
 
 async function verificarAdmin() {
   const sesion = obtenerSesionAdmin();
 
   if (!sesion || !sesion.token || sesion.usuario?.rol !== "admin") {
-    window.location.href = "/admin/login.html";
+    window.location.href = "/admin/login";
     return null;
   }
 
@@ -31,14 +31,14 @@ async function verificarAdmin() {
 
     if (!respuesta.ok) {
       localStorage.removeItem("adminSesion7Sopas");
-      window.location.href = "/admin/login.html";
+      window.location.href = "/admin/login";
       return null;
     }
 
     return sesion;
   } catch (error) {
     localStorage.removeItem("adminSesion7Sopas");
-    window.location.href = "/admin/login.html";
+    window.location.href = "/admin/login";
     return null;
   }
 }

@@ -363,33 +363,37 @@ main {
   color: var(--primary-color);
 }
 
+.login-wrapper {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  
+}
+
 .login-card {
   width: 100%;
-  max-width: 400px;
-  background: #dbdbdb;
-  border-radius: var(--border-radius);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: var(--transition);
+  max-width: 380px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  background: #fff;
 }
 
-.login-card .form-control {
-  border-radius: 8px;
-  padding: 12px;
+.login-title {
+  font-weight: 600;
 }
 
-.login-card .btn {
-  border-radius: 8px;
+.form-control {
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.btn-login {
+  border-radius: 10px;
   padding: 10px;
   font-weight: 500;
-}
-
-.login-card a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.login-card a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 991px) {
@@ -558,7 +562,6 @@ main {
   }
 }
 
-/* Mejoras nuevas: reservas, sesión y admin */
 .user-session {
   display: flex;
   align-items: center;
@@ -566,7 +569,6 @@ main {
 }
 
 .reservation-section {
-  padding-top: 110px;
   min-height: 80vh;
 }
 

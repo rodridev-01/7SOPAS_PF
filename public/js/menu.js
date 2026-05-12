@@ -23,7 +23,7 @@ function agregar(idProducto) {
   const producto = productosDisponibles.find((p) => Number(p.id) === Number(idProducto));
 
   if (!producto) {
-    alert("No se pudo encontrar el producto seleccionado");
+    alert("No se pudo encontrar el producto seleccionado.");
     return;
   }
 
@@ -31,6 +31,7 @@ function agregar(idProducto) {
   const tamaño = select.value;
   const precio = Number(producto.precios[tamaño]);
   const carrito = obtenerCarrito();
+
   const itemExistente = carrito.find(
     (item) => Number(item.productoId) === Number(idProducto) && item.tamaño === tamaño
   );
@@ -51,7 +52,7 @@ function agregar(idProducto) {
   }
 
   guardarCarrito(carrito);
-  alert(`${producto.nombre} (${normalizarTamaño(tamaño)}) agregado al carrito`);
+  alert(`${producto.nombre} (${normalizarTamaño(tamaño)}) agregado al carrito.`);
 }
 
 fetch(API + "/productos")
@@ -71,9 +72,9 @@ fetch(API + "/productos")
               <p class="text-muted small mb-3">Elige el tamaño y agrégalo a tu pedido.</p>
 
               <select id="size-${p.id}" class="form-select mb-3">
-                <option value="personal">Personal - S/ ${p.precios.personal}</option>
-                <option value="mediano">Mediano - S/ ${p.precios.mediano}</option>
-                <option value="grande">Grande - S/ ${p.precios.grande}</option>
+                <option value="personal">Personal - S/ ${Number(p.precios.personal).toFixed(2)}</option>
+                <option value="mediano">Mediano - S/ ${Number(p.precios.mediano).toFixed(2)}</option>
+                <option value="grande">Grande - S/ ${Number(p.precios.grande).toFixed(2)}</option>
               </select>
 
               <button onclick="agregar(${p.id})" class="btn btn-success w-100 mt-auto">
@@ -89,7 +90,9 @@ fetch(API + "/productos")
     const contenedor = document.getElementById("productos");
     contenedor.innerHTML = `
       <div class="col-12">
-        <div class="alert alert-danger">No se pudo cargar la carta. Verifica que el servidor esté activo.</div>
+        <div class="alert alert-danger">
+          No se pudo cargar la carta. Verifica que el servidor esté activo.
+        </div>
       </div>
     `;
   });

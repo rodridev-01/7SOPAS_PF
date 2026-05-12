@@ -31,7 +31,7 @@ formAdminLogin.addEventListener("submit", async (event) => {
     }
 
     guardarSesionAdmin({ token: data.token, usuario: data.usuario });
-    window.location.href = "/admin/dashboard.html";
+    window.location.href = "/admin/dashboard";
   } catch (error) {
     mostrarMensajeLogin("danger", "No se pudo conectar con el servidor.");
   }
