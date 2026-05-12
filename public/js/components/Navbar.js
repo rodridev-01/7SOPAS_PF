@@ -34,7 +34,9 @@ class Navbar extends HTMLElement {
                         <a href="https://wa.me/51998310683?" target="_blank" class="nav-icon"><i class="bi bi-whatsapp"></i></a>
                     </div>
 
-                    <a href="login" class="btn btn-sm btn-outline-danger" id="loginLink">Login</a>
+                    <a href="login" class="btn btn-sm btn-outline-danger" id="loginLink">
+                    Iniciar sesión
+                    </a>
 
                     <div class="user-session d-none" id="userSession">
                         <span class="small fw-bold" id="userGreeting"></span>
