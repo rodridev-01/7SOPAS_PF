@@ -11,8 +11,11 @@ app.use(express.json());
    ARCHIVOS ESTÁTICOS
 ========================= */
 
+// Frontend público
 app.use(express.static(path.join(__dirname, "../public")));
-app.use("/admin/assets", express.static(path.join(__dirname, "../admin")));
+
+// Assets del admin
+app.use("/admin/assets", express.static(path.join(__dirname, "../admin/public")));
 
 /* =========================
    API
@@ -48,10 +51,12 @@ app.get("/:page", (req, res, next) => {
    FRONTEND ADMIN
 ========================= */
 
+// Login admin
 app.get("/admin", (req, res) => {
   res.sendFile(path.join(__dirname, "../admin/login.html"));
 });
 
+// Páginas admin
 app.get("/admin/:page", (req, res, next) => {
   const filePath = path.join(
     __dirname,

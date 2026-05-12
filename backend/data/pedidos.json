@@ -10,9 +10,9 @@
         "cantidad": 2
       }
     ],
-    "estado": "entregado",
+    "estado": "preparando",
     "fecha": "2026-04-20",
-    "actualizadoEn": "2026-05-05T02:55:48.000Z"
+    "actualizadoEn": "2026-05-12T05:27:49.996Z"
   },
   {
     "id": 2,
@@ -38,8 +38,8 @@
     "subtotal": 15,
     "delivery": 6,
     "total": 21,
-    "estado": "cancelado",
+    "estado": "pendiente",
     "fecha": "2026-05-05T02:58:01.823Z",
-    "actualizadoEn": "2026-05-05T04:09:06.366Z"
+    "actualizadoEn": "2026-05-12T04:13:29.347Z"
   }
 ]

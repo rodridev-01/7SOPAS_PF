@@ -6,8 +6,8 @@
     "fecha": "2026-04-25",
     "hora": "20:00",
     "personas": 4,
-    "estado": "atendida",
-    "actualizadoEn": "2026-05-05T02:55:41.005Z"
+    "estado": "cancelada",
+    "actualizadoEn": "2026-05-12T04:13:25.241Z"
   },
   {
     "id": 2,
@@ -23,8 +23,8 @@
     "hora": "08:00",
     "personas": 4,
     "comentarios": "Reserva de ejemplo, probando 1 2 3 ...",
-    "estado": "confirmada",
+    "estado": "atendida",
     "creadoEn": "2026-05-05T02:53:48.028Z",
-    "actualizadoEn": "2026-05-05T02:55:39.221Z"
+    "actualizadoEn": "2026-05-12T04:13:23.962Z"
   }
 ]

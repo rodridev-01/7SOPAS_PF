@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "7 Sopas Surquillo (Angamos)",
-    "imagen": "../img/sedes/s1.png",
+    "imagen": "../img/sedes/s4.jpeg",
     "direccion": "Av. Angamos Este 609, Surquillo",
     "distrito": "Surquillo",
     "lat": -12.11327,
@@ -16,12 +16,15 @@
     "capacidad": 80,
     "mesasDisponibles": 25,
     "estado": "abierto",
-    "servicios": ["reserva", "takeaway"]
+    "servicios": [
+      "reserva",
+      "takeaway"
+    ]
   },
   {
     "id": 2,
     "nombre": "7 Sopas Lince",
-    "imagen": "../img/sedes/s1.png",
+    "imagen": "../img/sedes/s2.jpeg",
     "direccion": "Av. Arequipa 2394, Lince",
     "distrito": "Lince",
     "lat": -12.08792,
@@ -34,12 +37,15 @@
     "capacidad": 60,
     "mesasDisponibles": 18,
     "estado": "abierto",
-    "servicios": ["reserva", "takeaway"]
+    "servicios": [
+      "reserva",
+      "takeaway"
+    ]
   },
   {
     "id": 3,
     "nombre": "7 Sopas Miraflores",
-    "imagen": "../img/sedes/s1.png",
+    "imagen": "../img/sedes/s3.jpeg",
     "direccion": "Av. Petit Thouars 5541, Miraflores",
     "distrito": "Miraflores",
     "lat": -12.11895,
@@ -52,14 +58,17 @@
     "capacidad": 70,
     "mesasDisponibles": 20,
     "estado": "abierto",
-    "servicios": ["reserva", "takeaway"]
+    "servicios": [
+      "reserva",
+      "takeaway"
+    ]
   },
   {
     "id": 4,
     "nombre": "7 Sopas Plaza Norte",
     "direccion": "C.C. Plaza Norte, Independencia",
     "distrito": "Independencia",
-    "imagen": "../img/sedes/s1.png",
+    "imagen": "../img/sedes/s5.jpeg",
     "lat": -12.00741,
     "lng": -77.05818,
     "horario": {
@@ -70,14 +79,17 @@
     "capacidad": 90,
     "mesasDisponibles": 30,
     "estado": "abierto",
-    "servicios": ["reserva", "takeaway"]
+    "servicios": [
+      "reserva",
+      "takeaway"
+    ]
   },
   {
     "id": 5,
     "nombre": "7 Sopas Surco",
-    "imagen": "../img/sedes/s1.png",
+    "imagen": "../img/sedes/s6.jpeg",
     "direccion": "Av. Surco 659, Santiago de Surco",
-    "distrito": "Surco",  
+    "distrito": "Surco",
     "lat": -12.14057,
     "lng": -76.99496,
     "horario": {
@@ -88,12 +100,15 @@
     "capacidad": 75,
     "mesasDisponibles": 22,
     "estado": "abierto",
-    "servicios": ["reserva", "takeaway"]
+    "servicios": [
+      "reserva",
+      "takeaway"
+    ]
   },
   {
     "id": 6,
     "nombre": "7 Sopas Gamarra",
-    "imagen": "../img/sedes/s1.png",
+    "imagen": "../img/sedes/s7.jpeg",
     "direccion": "Jr. Huánuco 1670 (Parque Cánepa), La Victoria",
     "distrito": "La Victoria",
     "lat": -12.06449,
@@ -103,15 +118,20 @@
       "cierre": "21:00"
     },
     "telefono": "956789012",
-    "capacidad": 50,
+    "capacidad": 40,
     "mesasDisponibles": 15,
     "estado": "abierto",
-    "servicios": ["reserva", "takeaway"]
+    "servicios": [
+      "reserva",
+      "takeaway"
+    ],
+    "mesas": 40,
+    "activo": true
   },
   {
     "id": 7,
     "nombre": "7 Sopas Santa Anita",
-    "imagen": "../img/sedes/s1.png",
+    "imagen": "../img/sedes/s8.jpeg",
     "direccion": "Mall Aventura Santa Anita (Piso 3), Santa Anita",
     "distrito": "Santa Anita",
     "lat": -12.05637,
@@ -124,7 +144,10 @@
     "capacidad": 65,
     "mesasDisponibles": 19,
     "estado": "abierto",
-    "servicios": ["reserva", "takeaway"]
+    "servicios": [
+      "reserva",
+      "takeaway"
+    ]
   },
   {
     "id": 8,
@@ -142,6 +165,9 @@
     "capacidad": 85,
     "mesasDisponibles": 28,
     "estado": "abierto",
-    "servicios": ["reserva", "takeaway"]
+    "servicios": [
+      "reserva",
+      "takeaway"
+    ]
   }
 ]
